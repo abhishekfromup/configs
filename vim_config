@@ -1,0 +1,28 @@
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set wrap!
+set showmatch
+set ignorecase
+set hlsearch
+set incsearch
+set history=1000
+"set autoindent
+set nu
+"Need a plugin which automatically indents the code before each write operation 
+ nnoremap pdb A<CR>import pdb; pdb.set_trace()<esc>I 
+ let @i = "oimport pdb; pdb.set_trace()"
+let @s = "ofrom pprint import pprint as pp; pp(    )"
+set laststatus=2
+set statusline+=%F
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+nnoremap rd :read /home/skeleton.py
+nnoremap rp :%s///g
+nnoremap <F5> :edit!<CR>
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+"Tostore everything into global clipboard
+vmap yy :w! /home/vitmp<CR>
+nmap vv :r! cat /home/vitmp<CR>
