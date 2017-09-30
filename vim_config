@@ -28,3 +28,4 @@ vmap yy :w! /home/vitmp<CR>
 nmap vv :r! cat /home/vitmp<CR>
 
 "Now this change in config will be freezed by G babu
+"Now this change in config will be freezed by G babu 222
